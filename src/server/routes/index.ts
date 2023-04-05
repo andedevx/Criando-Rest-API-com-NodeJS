@@ -10,7 +10,7 @@ router.get('/',(req, res) => {
 
 router.post('/teste' ,(req, res) => { 
     console.log(req.body);
-    return res.status( StatusCodes.UNAUTHORIZED).send('rota post');
+    return res.status( StatusCodes.OK).send('rota post');
 });
 
 export{ router };
